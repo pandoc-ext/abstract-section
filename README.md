@@ -83,6 +83,22 @@ line option.
 
     pandoc --lua-filter abstract-section.lua ...
 
+### Quarto
+
+Users of Quarto can install this filter as an extension with
+
+    quarto install extension pandoc-ext/abstract-section
+
+and use it by adding `abstract-section` to the `filters` entry in
+their YAML header.
+
+``` yaml
+---
+filters:
+  - abstract-section
+---
+```
+
 ### R Markdown
 
 Use `pandoc_args` to invoke the filter. See the [R Markdown
