@@ -1,4 +1,4 @@
-# abstract-to-meta
+# abstract-section
 
 This moves a document's abstract from the main text into the
 metadata. Metadata elements usually allow for finer placement
