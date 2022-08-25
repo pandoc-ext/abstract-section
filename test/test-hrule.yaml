@@ -1,0 +1,4 @@
+input-files: [test/input-hrule.md]
+standalone: true
+filters: [{type: lua, path: abstract-to-meta.lua}]
+to: markdown
