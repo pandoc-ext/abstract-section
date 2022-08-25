@@ -7,7 +7,7 @@ Filter that ensures that "Abstract" sections are handled as
 expected.
 
 [CI badge]: https://img.shields.io/github/workflow/status/pandoc-ext/abstract-section/CI?logo=github
-[CI workflow]: https://github.com/abstract-section/actions/workflows/ci.yaml
+[CI workflow]: https://github.com/pandoc-ext/abstract-section/actions/workflows/ci.yaml
 
 
 Abstract in a dedicated section
