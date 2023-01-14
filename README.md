@@ -6,7 +6,7 @@ abstract-section
 Filter that ensures that "Abstract" sections are handled as
 expected.
 
-[CI badge]: https://img.shields.io/github/workflow/status/pandoc-ext/abstract-section/CI?logo=github
+[CI badge]: https://img.shields.io/github/actions/workflow/status/pandoc-ext/abstract-section/ci.yaml?branch=main&logo=github
 [CI workflow]: https://github.com/pandoc-ext/abstract-section/actions/workflows/ci.yaml
 
 
