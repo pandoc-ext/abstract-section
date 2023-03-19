@@ -3,7 +3,7 @@ DIFF ?= diff
 PANDOC ?= pandoc
 
 .PHONY: test
-test: test-hrule test-in-div
+test: test-hrule test-in-div test-two-sections
 
 test-%: $(FILTER_FILE) test/input-%.md test/test-%.yaml
 	@$(PANDOC) --defaults test/test-$*.yaml | \
