@@ -9,6 +9,10 @@ local section_identifiers = {
   abstract = true,
 }
 local collected = {}
+--- The level of the highest heading that was seen so far. Abstracts
+--- must be at or above this level to prevent nested sections from being
+--- treated as metadata. Only top-level sections should become metadata.
+local toplevel = 6
 
 --- Extract abstract from a list of blocks.
 local function abstract_from_blocklist (blocks)
@@ -16,7 +20,8 @@ local function abstract_from_blocklist (blocks)
   local looking_at_section = false
 
   for _, block in ipairs(blocks) do
-    if block.t == 'Header' and block.level == 1 then
+    if block.t == 'Header' and block.level <= toplevel then
+      toplevel = block.level
       if section_identifiers[block.identifier] then
         looking_at_section = block.identifier
         collected[looking_at_section] = {}
