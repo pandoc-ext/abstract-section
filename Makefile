@@ -3,8 +3,5 @@ DIFF ?= diff
 PANDOC ?= pandoc
 
 .PHONY: test
-test: test-hrule test-in-div test-two-sections
-
-test-%: $(FILTER_FILE) test/input-%.md test/test-%.yaml
-	@$(PANDOC) --defaults test/test-$*.yaml | \
-	    $(DIFF) test/expected-$*.md -
+test:
+	pandoc lua test/runtests.lua test/perevirky

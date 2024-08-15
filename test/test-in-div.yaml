@@ -1,4 +1,0 @@
-input-files: [test/input-in-div.md]
-standalone: true
-filters: [{type: lua, path: abstract-section.lua}]
-to: markdown
