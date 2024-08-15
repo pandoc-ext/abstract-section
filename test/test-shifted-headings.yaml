@@ -1,4 +1,0 @@
-input-files: [test/input-shifted-headings.md]
-standalone: true
-filters: [{type: lua, path: abstract-section.lua}]
-to: markdown

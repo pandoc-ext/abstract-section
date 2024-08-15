@@ -1,0 +1,5 @@
+---
+filters:
+  - abstract-section.lua
+ignore-softbreaks: true
+---
